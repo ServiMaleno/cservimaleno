@@ -601,3 +601,26 @@ a {
     color: #FD6100;
 }
 /*Fin de Cards de Noticias*/
+
+/* Barra de Sociales */
+
+.socials>a{
+    display: inline-block;
+    color:#fff;
+    background: #fff;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.socials a img{
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+}
+.socials a .facebook{background:#3b5998 ;}
+.socials a .twiter{background:#00abf0 ;}
+.socials a .linkedin{background:#ae181f ;}
+.socials a .instagram{background:#d95232 ;}
