@@ -694,23 +694,42 @@ a {
 
 /* Barra de Sociales */
 
-.socials>a{
+.social{
+
+    position: fixed;
+    left: 0;
+    top: 300px;
+    z-index: 1000;
+
+}
+
+.social ul{
+
+    list-style: none;
+
+}
+
+.social ul li a{
+
     display: inline-block;
     color:#fff;
-    background: #fff;
-    margin: 5px;
-    padding: 5px;
+    background: #000;
+    padding: 12px 15px;
     text-decoration: none;
     -webkit-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
+
 }
-.socials a img{
-    margin: 0px;
-    width: 30px;
-    height: 30px;
+
+.social ul li .icon-facebook{background:#3b5998 ;}
+.social ul li .icon-youtube{background:#ae181f ;}
+.social ul li .icon-tiktok{background:#362053 ;}
+.social ul li .icon-envelop{background:#666666 ;}
+
+.social ul li a:hover{
+
+    padding: 12px 30px;
+
+
 }
-.socials a .facebook{background:#3b5998 ;}
-.socials a .twiter{background:#00abf0 ;}
-.socials a .linkedin{background:#ae181f ;}
-.socials a .instagram{background:#d95232 ;}
