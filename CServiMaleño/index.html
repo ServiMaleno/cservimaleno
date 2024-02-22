@@ -21,7 +21,9 @@
     </a>
     <!--Fin de Enlace al Button Flotante de WhatsApp-->
     <header class="header2">
-        <div class="logo2">ServiMaleño</div>
+        <div class="logo2">
+            <a class="logo2" href="index.html">ServiMaleño</a>
+        </div>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -36,17 +38,21 @@
                 <li><a href="#">Comunidad</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
-        <!-- <input type="checkbox" id="menu">
-        <label for="menu"><img src="images/menu.png" class="menu-icono" alt=""></label> -->
         
     </header>
-    <br>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
     <header class="header">
 
         <img class="bg" src="images/backg1.png" alt="">
         <img class="esp" src="images/droid-2.png" alt="">
 
-        <div class="menu container">
+        <!-- <div class="menu container">
             <a href="index.html" class="logo">ServiMaleño</a>
             <input type="checkbox" id="menu">
             <label for="menu"><img src="images/menu.png" class="menu-icono" alt=""></label>
@@ -60,7 +66,7 @@
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
-        </div>
+        </div> -->
         <div class="header-content container">
             <div class="header-info">
                 <div class="header-txt">
