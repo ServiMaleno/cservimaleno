@@ -16,19 +16,22 @@
 .header2 {
     width: 100%;
     height: 80px;
-    background-color: black;
+    background-color: var(--color2);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
 }
 .logo2{ 
-    color: var(--color1);
+    color: white;
     font-size: 25px;
     font-weight: 800;
 }
 .logo2:hover {
-    color: var(--color2);
+    cursor: pointer;
+}
+.logo2 a {
+    margin-bottom: 0;
 }
 .hamburger {
    display: none; 
@@ -38,7 +41,7 @@
 }
 .nav-bar ul li a {
     display: block;
-    color: var(--color1);
+    color: white;
     font-size: 20px;
     padding: 10px 25px;
     border-radius: 50px;
@@ -47,11 +50,7 @@
 }
 .nav-bar ul li a:hover {
     color: var(--color2);
-    background-color: #ae181f;
-}
-.nav-bar ul li a.active {
-    color: var(--color2);
-    background-color: #ae181f;
+    background-color: white;
 }
 
 @media only screen and (max-width: 1320px) {
@@ -64,7 +63,48 @@
         padding: 0 30px;
     }
 }
-.container {
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: white;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar.active {
+        height: 450px;
+    }
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.nav-bar.active ul {
+        opacity: 1;
+    }
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+        color: var(--color2);
+    }
+}
+/* .container {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -83,7 +123,7 @@
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-}
+} */
 
 /*Título ServiMaleño y Transición*/
 .logo {
@@ -145,7 +185,6 @@
 .header-info {
     display: flex;
     align-items: center;
-    margin-top: 100px;
 }
 
 .header-txt {
